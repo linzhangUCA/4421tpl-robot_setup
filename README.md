@@ -1,13 +1,13 @@
 # Project 1: Robot Setup
 
 ## 1. Intro
-Our goal is to develop a robot with autonomous navigation capability. A variety of sensors, actuators and functionalities will be integrated on the board. In other words, the robot will be "complicated". To ease the complication of managing such a system, [ROS 2 Humble](https://docs.ros.org/en/humble/) will be employed. Given a few start up materials, you'll come up with your design of the mobile robot base; assemble the physical prototype; and realize basic management using ROS.  
+Our goal is to develop a robot with autonomous navigation capability. A variety of sensors, actuators and functionalities will be integrated on the board. In other words, the robot will be "complicated". To ease the complication of managing such a system, [ROS 2 Humble](https://docs.ros.org/en/humble/) will be employed. Given a few start up materials, you'll come up with your design of the mobile robot base; assemble the physical body; and practice basic management using ROS.  
 
 ## 2. Requirements
 1. Build a functional mobile robot base.
 2. Program a microcontroller to drive motors and monitor the robot's status.
-3. Test and analyze features of the robot.
-4. Install and configure ROS. Develop ROS package(s) to publish robot's state and listen to remote control commands. 
+3. Install and configure ROS. Develop ROS package(s) to publish robot's state and listen to remote control commands. 
+4. Test and analyze features of the robot.
 
 ### 2.1 Coding
 - Please upload your code to this repository. 
