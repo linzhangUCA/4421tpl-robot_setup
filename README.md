@@ -11,13 +11,13 @@ cd <ros workspace>/src/<this repo>/
 ros2 pkg create --build-type ament-python <package name>
 ```
 
-## 2. Requirements
+## 3. Requirements
 1. Build a functional mobile robot base.
 2. Program a microcontroller to drive motors and monitor the robot's status.
 3. Install and configure ROS. Develop ROS package(s) to publish robot's state and listen to remote control commands. 
 4. Test and analyze features of the robot.
 
-### 2.1 Coding
+### 3.1 Coding
 - Please upload your code to this repository. 
 - **(25%)** Differential driver on microcontroller:
     - Reads linear and angular velocity commands (for the robot) transfered from the serial port.
@@ -31,7 +31,7 @@ ros2 pkg create --build-type ament-python <package name>
 - **(5%)** Remote control
     - Verify if the robot is controllable using [`teleop_twist_keyboard`](https://index.ros.org/r/teleop_twist_keyboard/) package.
     
-### 2.2 Documentation
+### 3.2 Documentation
 - Use this `README` file or create a separate markdown file or upload a pdf file for the documentation.
 - Describe the project in concise words. Unless in the Summary section, or:
     - Describe only the final solutions.
