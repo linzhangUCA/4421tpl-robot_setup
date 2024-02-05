@@ -4,22 +4,19 @@
 Our goal is to develop a robot with autonomous navigation capability. A variety of sensors, actuators and functionalities will be integrated on the board. In other words, the robot will be "complicated". To ease the complication of managing such a system, [ROS 2 Humble](https://docs.ros.org/en/humble/) will be employed. Given a few start up materials, you'll come up with your design of the mobile robot base; assemble the physical prototype; and realize basic management using ROS.  
 
 ## Requirements:
-1. Build the robot's mobile base.
+1. Build a functional mobile robot base.
 2. Program a microcontroller to drive motors and monitor the robot's status.
 3. Test and analyze features of the robot.
 4. Install and configure ROS. Develop ROS package(s) to publish robot's state and listen to remote control commands. 
 
 ### (60%) Coding:
-- Please upload your code to this repository. A Python script running on the computer and another python script running on the Pico board are expected. 
-- As there are more more than 1 solutions, the only criterion is to navigate use the designated sensor as the main source.  
-- (20%) Stage 1 - Encoder Navigation:
-    - **Start the robot on or behind the "Stage 1 Start Line"**.
-    - You may need to plan a good trajectory first.
-    - Calculate encoder counts based on planned trajectory.
-    - (5%) **Stop at the "Stage 2 Start Area" in the end**.
-    - Refer to [Assignment 5](https://classroom.github.com/a/vAs41PAP).
+> Please upload your code to this repository. 
+- (20%) Differential driver on microcontroller:
+    - Reads linear and angular velocity commands (for the robot) transfered from the serial port.
+    - Outputs signals to approapriate GPIO pins to drive the motor at right speed and direction.
+    - Transmits **robot's** linear and angular velocity via serial port at **100 Hz**.
 
-- (20%) Stage 2 - Lidar Navigation:
+- (20%) ROS package for bringing up the robot 
     - You may want to use walls to do wall following.
     - (5%) **Stop at the "Stage 3 Start Area" in the end**.
     -  **Hint: you can hard code time to stop this stage**
