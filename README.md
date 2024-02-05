@@ -21,11 +21,15 @@ Our goal is to develop a robot with autonomous navigation capability. A variety 
     - The node publishes the robot's (velocity) state in a topic with **[`geometry_msgs/msg/Twist`](https://docs.ros2.org/latest/api/geometry_msgs/msg/TwistStamped.html)** message at **100 Hz**.
     - The node subscribe to the `/cmd_vel` topic and translate the message according to the microcontroller's script.
 - **(5%)** Remote control
-Verify if the robot is controllable using [`teleop_twist_keyboard`](https://index.ros.org/r/teleop_twist_keyboard/) package.
+    - Verify if the robot is controllable using [`teleop_twist_keyboard`](https://index.ros.org/r/teleop_twist_keyboard/) package.
     
 ### 2.2 Documentation
 - Use this `README` file or create a separate markdown file or upload a pdf file for the documentation.
-- Describe the project in concise words.
+- Describe the project in concise words. Unless in the Summary section, or:
+    - Describe only the final solutions.
+    - Don't tell stories.
+    - Use more indexed or bulleted paragraphs. 
+- Have the documents well organized (break it down into sections). 
 - Please include following contents in your documents.
     1. **(10%)** Part list (name, key specifications, functionalities and quantities).
     2. **(15%)** Mechanical layout (sketch(es) with dimensions of key parts and measurements, wiring diagram)
