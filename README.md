@@ -23,12 +23,11 @@ ros2 pkg create --build-type ament-python <package name>
     - Reads linear and angular velocity commands (for the robot) transfered from the serial port.
     - Outputs signals to approapriate GPIO pins to drive the motor at right speed and direction.
     - Transmits **robot's** linear and angular velocity via serial port at **100 Hz**.
-- **(30%)** ROS package for bringing up the robot 
+- **(35%)** ROS package for bringing up the robot 
     - The package should contain at least one node. The node(s) should contain a publisher and a subscriber.
     - The node receives the robot's (velocity) states from the microcontroller and transmits the velocity commands to the microcontroller via serial port. 
     - The node publishes the robot's (velocity) state in a topic with **[`geometry_msgs/msg/Twist`](https://docs.ros2.org/latest/api/geometry_msgs/msg/TwistStamped.html)** message at **100 Hz**.
     - The node subscribe to the `/cmd_vel` topic and translate the message according to the microcontroller's script.
-- **(5%)** Remote control
     - Verify if the robot is controllable using [`teleop_twist_keyboard`](https://index.ros.org/r/teleop_twist_keyboard/) package.
     
 ### 3.2 Documentation
