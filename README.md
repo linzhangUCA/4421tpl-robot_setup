@@ -1,7 +1,7 @@
 # Project 1: Robot Setup
 
 ## Background
-Our goal is to develop a robot which will be capable of navigating in Lewis Science Center autonomously. To achieve this goal, we need to integrate a variety of sensors, actuators and functionalities on the board. In other words, the robot will be "complicated". To ease the complication of managing such a system, [ROS 2 Humble](https://docs.ros.org/en/humble/) is introduced. In this project, you will come up with a design of a mobile robot base; assemble the parts to bring up a physical prototype; install ROS in the brain of your robot.  
+Our goal is to develop a robot with autonomous navigation capability. A variety of sensors, actuators and functionalities will be integrated on the board. In other words, the robot will be "complicated". To ease the complication of managing such a system, [ROS 2 Humble](https://docs.ros.org/en/humble/) will be employed. Given a few start up materials, you'll come up with your design of the mobile robot base; assemble the physical prototype; and realize basic management using ROS.  
 
 ## Requirements:
 The robot needs to autonomously navigate to the destinition using all kinds of sensors. The navigation is broken down into 3 stages. In each stage, the robot needs to employ a specific sensor to make right decisions.
