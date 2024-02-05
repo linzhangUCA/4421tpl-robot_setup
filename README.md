@@ -3,6 +3,15 @@
 ## 1. Intro
 Our goal is to develop a robot with autonomous navigation capability. A variety of sensors, actuators and functionalities will be integrated on the board. In other words, the robot will be "complicated". To ease the complication of managing such a system, [ROS 2 Humble](https://docs.ros.org/en/humble/) will be employed. Given a few start up materials, you'll come up with your design of the mobile robot base; assemble the physical body; and practice basic management using ROS.  
 
+## 2. Quick Start
+- Since this repository may serve as a container to host a few ROS packages, consider to clone and place this repository under the ROS workspace you are working on. An example of the local location and structure of this repository can be as follows.
+[](![Alt text](repo_structure.png))
+- To create a ROS package in your local repository:
+```console
+cd <ros workspace>/src/<this repo>/
+ros2 pkg create --build-type ament-python <package name>
+```
+
 ## 2. Requirements
 1. Build a functional mobile robot base.
 2. Program a microcontroller to drive motors and monitor the robot's status.
