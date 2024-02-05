@@ -36,7 +36,6 @@ ros2 pkg create --build-type ament-python <package name>
 - Describe the project in concise words. Unless in the Summary section, or:
     - Describe only the final solutions.
     - Don't tell stories.
-    - Indexed or bulleted contents are welcome. 
 - Have the documents well organized (break it down into sections). 
 - Please include following contents in your documents.
     1. **(10%)** Part list (name, key specifications, functionalities and quantities).
