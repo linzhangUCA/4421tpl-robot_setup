@@ -41,5 +41,5 @@ ros2 pkg create --build-type ament-python <package name>
     1. **(10%)** Part list (name, key specifications, functionalities and quantities).
     2. **(15%)** Mechanical layout (sketch(es) with dimensions of key parts and measurements, wiring diagram)
     3. **(8%)** Mechanical features (weight, max velocity, max payload capacity)
-    4. **(2%)** Summary this project and share any thoughs or interesting finding.
+    4. **(2%)** Summary this project. You can share any thoughs or interesting findings, or discuss the future of the applications.
 
