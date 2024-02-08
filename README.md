@@ -29,7 +29,7 @@ ros2 pkg create --build-type ament-python <package name>
     - The node receives the robot's (velocity) states from the microcontroller and transmits the velocity commands to the microcontroller via serial port. 
     - The node publishes the robot's (velocity) state in a topic with **[`geometry_msgs/msg/Twist`](https://docs.ros2.org/latest/api/geometry_msgs/msg/TwistStamped.html)** message at **100 Hz**.
     - The node subscribe to the `/cmd_vel` topic and translate the message according to the microcontroller's script.
-    - Verify if the robot is controllable using [`teleop_twist_keyboard`](https://index.ros.org/r/teleop_twist_keyboard/) package.
+    - Move the robot around using [`teleop_twist_keyboard`](https://index.ros.org/r/teleop_twist_keyboard/) package. Find out the default linear and angular velocity commands for keys: `u`, `i`, `j`, `j`, `k`, `l`, `m`, `,`, `.`. Set appropriate duty cycle for PWM signals which drives the robot.
     
 ### 3.2 Documentation
 - Use this `README` file or create a separate markdown file or upload a pdf file for the documentation.
