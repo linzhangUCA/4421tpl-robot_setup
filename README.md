@@ -48,7 +48,7 @@ In other words, the robot will be "complicated". We will employ [Robot Operating
 3. (5%) Illustrate ROS Nodes diagram with all participating/active nodes and topics.
 4. (15%) Estimate the robot's **pose**.
    - Given the following conditions.
-      1. Using the same temporal and spatial setups as described in [Assignment 3](https://classroom.github.com/classrooms/88724654-robotics2-spring2025/assignments/a3-naive-odometry)
+      1. Using the same temporal and spatial setups as described in [Assignment 3](https://classroom.github.com/a/R9LNWs9-)
       2. Let the robot initiated at the state: $$(X_0 = 0, Y_0 = 0, \theta_0 = 0, v_0 = 0.5, \omega_0 = \pi/3)$$
       3. Keep the linear and angular velocity the same and let them last for 1.2 seconds.
       4. Use the same frequency as the `/homer/real_velocity` topic use to estimate the robot's pose.
