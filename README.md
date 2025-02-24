@@ -45,7 +45,7 @@ So, we will employ [Robot Operating System (ROS)](https://docs.ros.org/) to ease
 1. (5%) Illustrate a Schematic of mechanical design with specific dimensions and locations of key components.
 2. (10%) Illustrate a Wiring diagram for the relationships among the batteries, motors, motor driver, Pico board, power management board and Raspberry Pi.
    Please mark/denote the signal wires and power wires.
-3. (5%) Illustrate ROS Nodes diagram with all participating/active nodes and topics.
+3. (5%) Illustrate a graph of ROS Nodes with all participating/active nodes and topics.
 4. (15%) Estimate the robot's **pose**.
    - Given the following conditions.
       1. Using the same temporal and spatial setups as described in [Assignment 3](https://classroom.github.com/a/R9LNWs9-)
