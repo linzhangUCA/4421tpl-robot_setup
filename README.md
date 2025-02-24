@@ -52,7 +52,7 @@ In other words, the robot will be "complicated". We will employ [Robot Operating
       2. Let the robot initiated at the state: $$(X_0 = 0, Y_0 = 0, \theta_0 = 0, v_0 = 0.5, \omega_0 = \pi/3)$$
       3. Keep the linear and angular velocity the same and let them last for 1.2 seconds.
       4. Use the same frequency as the `/homer/real_velocity` topic use to estimate the robot's pose.
-   - Please estimate the robot's final pose with the key procedures/equations for the calculation.
+   - Please estimate the robot's final pose with the key procedures/equations.
      
 ### 5. (5%) Demonstrate remote control and drive the robot along the designated path. 
 Remotely control your robot to travel along the path as required in the final project in Robotics 1.
@@ -61,6 +61,7 @@ Using either the keyboard on a laptop or a gamepad to drive your robot.
 ![traj](images/remote_traj.png)
 
 ## Documentation
+
 ### Mechanical Design
 ![]()
 
