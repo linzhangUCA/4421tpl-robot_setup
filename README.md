@@ -13,10 +13,11 @@ In other words, the robot will be "complicated". We will employ [Robot Operating
 
 ## Requirements
 ### 1. (10%) Create a ROS package and organize the robot related resources in this package.
-- (2.5%) Save the executables (Python scripts) under `<ros workspace>/src/<this repo>/<package name>/<package name>/`
-- (2.5%) Save the mechanical design files (schemetic and STL) under `<ros workspace>/src/<this repo>/<package name>/resources/`
-- (2.5%) Verify you can start the node (anywhere) with the command: `ros2 run <package name> <executable name>/`
-- (2.5%) Make sure author's information is correctly filled in `package.xml` and `setup.py`.
+- (2%) Save the executables (Python scripts) under `<ros workspace>/src/<this repo>/<package name>/<package name>/`
+- (2%) Save the MicroPython scripts for the Pico board under `<ros workspace>/src/<this repo>/<package name>/pico_scripts/`
+- (2%) Save the mechanical design files (schematic and STL), wiring diagram and node graphs under `<ros workspace>/src/<this repo>/<package name>/resources/`
+- (2%) Verify you can start the node (anywhere) with the command: `ros2 run <package name> <executable name>/`
+- (2%) Make sure author's information is correctly filled in `package.xml` and `setup.py`.
 - To host ROS packages, your may need to prepare the development environment including but not limiting to:
    - Flash **Ubuntu 24.04** on Raspberry Pi 5.
      Refer to [guide](https://ubuntu.com/tutorials/how-to-install-ubuntu-desktop-on-raspberry-pi-4#2-prepare-the-sd-card)
@@ -40,9 +41,33 @@ In other words, the robot will be "complicated". We will employ [Robot Operating
    Publish the message to **`/homer/real_velocity` topic** at **50 Hz**.
 - To publish the `/cmd_vel` topic from an external device (keyboard/gamepad), consider using [`teleop_twist_joy`](https://index.ros.org/r/teleop_twist_joy/) or [`teleop_twist_keyboard`](https://index.ros.org/r/teleop_twist_keyboard/) package.
   
-### 4. Document the project using this [README](README.md).
+### 4. (35%) Document the project using this [README](README.md).
+1. (5%) Illustrate a Schematic of mechanical design with specific dimensions and locations of key components.
+2. (10%) Illustrate a Wiring diagram for the relationships among the batteries, motors, motor driver, Pico board, power management board and Raspberry Pi.
+   Please mark/denote the signal wires and power wires.
+3. (5%) Illustrate ROS Nodes diagram with all participating/active nodes and topics.
+4. (15%) Estimate the robot's **pose**.
+   - Given the following conditions.
+      1. Using the same temporal and spatial setups as described in [Assignment 3](https://classroom.github.com/classrooms/88724654-robotics2-spring2025/assignments/a3-naive-odometry)
+      2. Let the robot initiated at the state: $$(X_0 = 0, Y_0 = 0, \theta_0 = 0, v_0 = 0.5, \omega_0 = \pi/3)$$
+      3. Keep the linear and angular velocity the same and let them last for 1.2 seconds.
+      4. Use the same frequency as the `/homer/real_velocity` topic use to estimate the robot's pose.
+   - Please estimate the robot's final pose with the key procedures/equations for the calculation.
+     
+### 5. (5%) Demonstrate remote control and drive the robot along the designated path. 
+Remotely control your robot to travel along the path as required in the final project in Robotics 1.
+Using either the keyboard on a laptop or a gamepad to drive your robot.
 
-### 5. (10%) Demonstrate remote control and drive the robot along the designated path. 
+![traj](images/remote_traj.png)
 
 ## Documentation
+### Mechanical Design
+![]()
 
+### Wiring Diagram
+![]()
+
+### Node Graph
+![]()
+
+### An Example of Estimating Robot's State
