@@ -55,10 +55,8 @@ In other words, the robot will be "complicated". We will employ [Robot Operating
    - Please estimate the robot's final pose with the key procedures/equations.
      
 ### 5. (5%) Demonstrate remote control and drive the robot along the designated path. 
-Remotely control your robot to travel along the path as required in the final project in Robotics 1.
+Remotely control your robot to travel along the path as required in the [final project](https://classroom.github.com/a/6rpdyl8z) in Robotics 1.
 Using either the keyboard on a laptop or a gamepad to drive your robot.
-
-![traj](images/remote_traj.png)
 
 ## Documentation
 
