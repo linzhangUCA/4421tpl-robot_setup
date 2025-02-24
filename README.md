@@ -41,7 +41,7 @@ So, we will employ [Robot Operating System (ROS)](https://docs.ros.org/) to ease
    Publish the message to **`/homer/real_velocity` topic** at **50 Hz**.
 - To publish the `/cmd_vel` topic from an external device (keyboard/gamepad), consider using [`teleop_twist_joy`](https://index.ros.org/r/teleop_twist_joy/) or [`teleop_twist_keyboard`](https://index.ros.org/r/teleop_twist_keyboard/) package.
   
-### 4. (30%) Document the project using this [README](README.md).
+### 4. (30%) Document the project in the [Documentation](README.md#documentation) section.
 1. (5%) Illustrate a Schematic of mechanical design with specific dimensions and locations of key components.
 2. (10%) Illustrate a Wiring diagram for the relationships among the batteries, motors, motor driver, Pico board, power management board and Raspberry Pi.
    Please mark/denote the signal wires and power wires.
