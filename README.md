@@ -59,6 +59,9 @@ So, we will employ [Robot Operating System (ROS)](https://docs.ros.org/) to ease
 Remotely control your robot to travel along the path as required in the [final project](https://classroom.github.com/a/6rpdyl8z) in Robotics 1.
 Using either the keyboard on a laptop or a gamepad to drive your robot.
 
+### 6. AI Policies
+Please acknowledge AI's contributions according to the policies in the [syllabus](https://linzhanguca.github.io/_docs/robotics2-2025/syllabus.pdf).
+
 ## Documentation
 
 ### Mechanical Design
