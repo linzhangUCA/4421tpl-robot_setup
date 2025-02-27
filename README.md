@@ -1,4 +1,4 @@
-# Project 1: Initialize a ROS Powererd Robot
+# Project 1: Set Up a ROS Powererd Robot
 
 ## Intro
 Our goal is to develop a robot with autonomous navigation capability. 
