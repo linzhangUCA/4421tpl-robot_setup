@@ -19,7 +19,7 @@ So, we will employ [Robot Operating System (ROS)](https://docs.ros.org/) to ease
 - (2%) Save the mechanical design files (schematic and STL), wiring diagram and node graphs under `<ros workspace>/src/<this repo>/<package name>/resources/`
 - (2%) Verify you can start the node (anywhere) with the command: `ros2 run <package name> <executable name>/`
 - (2%) Make sure author's information is correctly filled in `package.xml` and `setup.py`.
-- To host ROS packages, your may need to prepare the development environment including but not limiting to:
+- To host ROS packages, you may need to prepare the development environment including but not limiting to:
    - [Flash **Ubuntu 24.04** on Raspberry Pi 5](https://ubuntu.com/tutorials/how-to-install-ubuntu-desktop-on-raspberry-pi-4#2-prepare-the-sd-card).
    - Install [ROS 2 **Jazzy** Jalisco](https://docs.ros.org/en/jazzy/Installation/Ubuntu-Install-Debs.html) and [configure ROS environment](https://docs.ros.org/en/jazzy/Tutorials/Beginner-CLI-Tools/Configuring-ROS2-Environment.html).
    - Create [ROS workspace](https://docs.ros.org/en/jazzy/Tutorials/Beginner-Client-Libraries/Creating-A-Workspace/Creating-A-Workspace.html).
@@ -35,10 +35,11 @@ So, we will employ [Robot Operating System (ROS)](https://docs.ros.org/) to ease
   
 ### 3. (35%) Develop ROS node(s).
 1. (5%) Subscribe to the **`/cmd_vel` topic** and retrieve the linear and angular velocity from the embedded **[`Twist`](https://docs.ros2.org/foxy/api/geometry_msgs/msg/Twist.html) message**.
-2. (10%) Transmit the subscribed linear and angular velocity to the Pico board as **target velocity** for the robot.
-3. (20%) receive **actual velocity** from the Pico board.
+2. (15%) Transmit the subscribed linear and angular velocity to the Pico board as **target velocity** for the robot.
+3. (15%) receive **actual velocity** from the Pico board.
    Fill a **[`Twist`](https://docs.ros2.org/foxy/api/geometry_msgs/msg/Twist.html) message**.
    Publish the message to **`/homer/real_velocity` topic** at **50 Hz**.
+- You are responsible for setting up the communication between the Pico board and the Raspberry Pi 5.
 - To publish the `/cmd_vel` topic from an external device (keyboard/gamepad), consider using [`teleop_twist_joy`](https://index.ros.org/r/teleop_twist_joy/) or [`teleop_twist_keyboard`](https://index.ros.org/r/teleop_twist_keyboard/) package.
   
 ### 4. (30%) Document the project in the [Documentation](README.md#documentation) section.
