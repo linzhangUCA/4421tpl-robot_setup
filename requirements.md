@@ -1,10 +1,15 @@
 # Project 1: First ROS Package
 
-## Intro
-Our goal is to develop a robot with autonomous navigation capability. 
-A variety of sensors, actuators and functionalities will be integrated on the board. 
-In other words, the robot will be "complicated". 
-So, we will employ [Robot Operating System (ROS)](https://docs.ros.org/) to ease the complication of management. 
+## Background
+Recall the final project of Robotics I.
+Were you struggling with managing the components on the lab rover (despite how naive it was)?
+Have you ever imagined upgrading the rover with extended computers, sensors and actuators?
+
+The [Robot Operating System (ROS)](https://docs.ros.org/en/jazzy/index.html) is here to help.
+With its inherent modularity, which effectively turns software development into a "building block" architecture similar to assembling Legos. 
+Rather than writing a single, monolithic script that becomes impossible to debug, ROS allows you to break your robot’s complex functions into independent, isolated "nodes" that communicate through a universal messaging system. 
+
+In this project, your team will develop a ROS package to manage the robot for Robotics 2.
 
 ## Objectives
 - Practice mechinacal design, fabrication and assembly.
