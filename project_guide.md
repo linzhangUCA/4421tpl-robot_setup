@@ -63,14 +63,14 @@ Please upload all the electrical drawings into the [drawings/electrical](drawing
 > - **Bonus** will be given to innovated electrical designs in a scale of 0% to 5% of the project's total.
 
 ### 4. (60%) ROS Package Development
-- Develop ROS package executable(s) with at least one node to fulfill the following demands:
+- (40%) Develop ROS package executable(s) with at least one node to fulfill the following demands:
   - **Subscribe** to the `/cmd_vel` **topic** and retrieve the correct linear and angular velocity from the embedded [`Twist`](https://docs.ros2.org/foxy/api/geometry_msgs/msg/Twist.html) **message**.
   - **Transmit** the subscribed linear and angular velocity to the Pico board as the reference velocity for the robot.
   - **Receive** measured velocity from the Pico board at an appropriate rate.
   - **Publish** a message under the **`/<your_robot_name>/measured_velocity` topic** at **50 Hz** with a [`Twist`](https://docs.ros2.org/foxy/api/geometry_msgs/msg/Twist.html) **message**.
-- Edit `setup.py` (or `CMakeLists.txt` if your package is with type of `ament_cmake`) to introduce all your executables to ROS.
-- Edit `setup.py` and `package.xml` with correct `description`, `maintainer`, `email`, and `license` information.
-- Illustrate the relationship among your node(s), [`teleop_twist_joy`](https://index.ros.org/r/teleop_twist_joy/#jazzy) node and the [`teleop_twist_keyboard`](https://index.ros.org/r/teleop_twist_keyboard/#jazzy) node use a node graph with topics and messages information. Upload the node graph to [drawings/](drawings/) and **display it in the [README](README.md)**.
+- (5%) Edit `setup.py` (or `CMakeLists.txt` if your package is with type of `ament_cmake`) to introduce all your executables to ROS.
+- (5%) Edit `setup.py` and `package.xml` with correct `description`, `maintainer`, `email`, and `license` information.
+- (10%) Illustrate the relationship among your node(s), [`teleop_twist_joy`](https://index.ros.org/r/teleop_twist_joy/#jazzy) node and the [`teleop_twist_keyboard`](https://index.ros.org/r/teleop_twist_keyboard/#jazzy) node use a node graph with topics and messages information. Upload the node graph to [drawings/](drawings/) and **display it in the [README](README.md)**.
 
 > [!NOTE]
 > - To validate if your executable is recognizable by ROS, run command: `ros2 run <package_name> <executable_name>`.
