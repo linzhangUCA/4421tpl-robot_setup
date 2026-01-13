@@ -12,6 +12,12 @@ Rather than writing a single, monolithic script that is hard to maintain and deb
 In this project, your team will start building the mobile base of the coffee delivery robot.
 You will practice managing the robot using a ROS package and several ROS compatible modules.
 
+## Resources
+- Please refer to HomeR's [documentation](https://linzhanguca.github.io/projects/homer) if you need to be inspired.
+- FreeCAD designs of the 3D printable parts of HomeR are hosted here: [https://github.com/linzhangUCA/homer_me](https://github.com/linzhangUCA/homer_me).
+- KiCAD designs of the electronics relay PCB are hosted here: [https://github.com/linzhangUCA/homer_ee](https://github.com/linzhangUCA/homer_ee).
+- MicroPython scripts for controlling the differential drive mobile base of the HomeR can be found here: [https://github.com/linzhangUCA/homer_pico](https://github.com/linzhangUCA/homer_pico).
+- ROS official [document](https://docs.ros.org/en/jazzy/index.html) site is the gold.
 
 ## Requirements
 - Upload your ROS package to this repository.
@@ -69,6 +75,7 @@ Please upload all the electrical drawings into the [drawings/electrical](drawing
 ## Demonstration Rules
 Remotely control your robot to travel along the path as required in the [final project](https://classroom.github.com/a/6rpdyl8z) in Robotics 1.
 Using either the keyboard on a laptop or a gamepad to drive your robot.
+
 
 ### 6. AI Policies
 Please acknowledge AI's contributions according to the policies in the [syllabus](https://linzhanguca.github.io/_docs/robotics2-2025/syllabus.pdf).
