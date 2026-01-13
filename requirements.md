@@ -1,6 +1,6 @@
 # Project Instructions
 
-## Background
+## Overview
 Recall the final project of Robotics I.
 Were you struggling with managing the components on the lab rover (despite how naive it was)?
 Have you ever imagined upgrading the rover with extended computers, sensors and actuators?
@@ -9,19 +9,23 @@ The [Robot Operating System (ROS)](https://docs.ros.org/en/jazzy/index.html) is 
 With its inherent modularity, which effectively turns software development into a "building block" architecture similar to assembling Legos. 
 Rather than writing a single, monolithic script that is hard to maintain and debug, ROS allows you to break your robot’s complex functions into independent, isolated "nodes" that communicate through a universal messaging system. 
 
-In this project, your team will start building the mobile base of the coffee delivery robot.
-You will practice managing the robot using a ROS package and several ROS compatible modules.
+In this project, you and your teammate(s) are expected to achieve following goals. 
+- Build a mobile base for a coffee delivery robot.
+- Test and verify motor control and inter-computer communications of the robot.
+- Manage the robot with a ROS package and nodes.
+- Document your designs and usage of the robot using this Github repository.
+
 
 ## Resources
 - Please refer to HomeR's [documentation](https://linzhanguca.github.io/projects/homer) if you need to be inspired.
-- FreeCAD designs of the 3D printable parts of HomeR are hosted here: [https://github.com/linzhangUCA/homer_me](https://github.com/linzhangUCA/homer_me).
+- Mechanical designs using FreeCAD and 3D printable parts of HomeR are hosted here: [https://github.com/linzhangUCA/homer_me](https://github.com/linzhangUCA/homer_me).
 - KiCAD designs of the electronics relay PCB are hosted here: [https://github.com/linzhangUCA/homer_ee](https://github.com/linzhangUCA/homer_ee).
 - MicroPython scripts for controlling the differential drive mobile base of the HomeR can be found here: [https://github.com/linzhangUCA/homer_pico](https://github.com/linzhangUCA/homer_pico).
 - ROS official [document](https://docs.ros.org/en/jazzy/index.html) site is the gold.
 
 ## Requirements
 - Upload your ROS package to this repository.
-- Complete documentation in [README](README.md) to inspire interested people.
+- Complete documentation in [README](README.md) (, a practice to inspire interested people).
 
 ### 1. Portrait
 - Take a **clear** picture of your robot.
