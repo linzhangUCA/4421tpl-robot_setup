@@ -54,17 +54,17 @@ Please upload all the electrical drawings into the [drawings/electrical](drawing
 > - **Bonus** will be given to innovated electrical designs in a scale of 0% to 5% of the project's total.
 
 ### 4. (35%) ROS Package Development
-- Upload all the source code running on the Pico to [pico_scripts](pico_scripts) directory.
 - Develop ROS package executable(s) with at least one node to fulfill the following demands:
   - **Subscribe** to the `/cmd_vel` **topic** and retrieve the correct linear and angular velocity from the embedded [`Twist`](https://docs.ros2.org/foxy/api/geometry_msgs/msg/Twist.html) **message**.
   - **Transmit** the subscribed linear and angular velocity to the Pico board as the reference velocity for the robot.
   - **Receive** measured velocity from the Pico board, then publish a message under the **`/<your_robot_name>/measured_velocity` topic** at **50 Hz** with a [`Twist`](https://docs.ros2.org/foxy/api/geometry_msgs/msg/Twist.html) **message**.
 - Edit `setup.py` (or `CMakeLists.txt` if your package is with type of `ament_cmake`) to introduce all your executables to ROS.
+- Edit `setup.py` and `package.xml` with correct `description`, `maintainer`, `email`, and `license` information.
 
 > [!NOTE]
-> - To validate an executable, run command: `ros2 run <package_name> <executable_name>`. 
+> - To validate an executable, run command: `ros2 run <package_name> <executable_name>`.
+> - It is students' responsibility to maintain the code running on their teams' Pico boards. Team failed to bring up a functional Pico board during the demonstration will loss 50% of the ROS Package Development credits.
 > - Extra 5% of project total credits will be given to the teams achieved to **launch** everything in one command.
-> - 
 
 ## Demonstration Rules
 Remotely control your robot to travel along the path as required in the [final project](https://classroom.github.com/a/6rpdyl8z) in Robotics 1.
