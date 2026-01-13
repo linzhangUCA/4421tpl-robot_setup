@@ -72,6 +72,9 @@ Please upload all the electrical drawings into the [drawings/electrical](drawing
 - (5%) Edit `setup.py` and `package.xml` with correct `description`, `maintainer`, `email`, and `license` information.
 - (10%) Illustrate the relationship among your node(s), [`teleop_twist_joy`](https://index.ros.org/r/teleop_twist_joy/#jazzy) node and the [`teleop_twist_keyboard`](https://index.ros.org/r/teleop_twist_keyboard/#jazzy) node use a node graph with topics and messages information. Upload the node graph to [drawings/](drawings/) and **display it in the [README](README.md)**.
 
+> [!WARNING]
+> Your grade will be hugely discounted if the submitted package failed `colcon build` on instructor's machine.
+
 > [!NOTE]
 > - To validate if your executable is recognizable by ROS, run command: `ros2 run <package_name> <executable_name>`.
 > - It is students' responsibility to maintain the code running on their teams' Pico boards. Team failed to bring up a functional Pico board during the demonstration will loss 50% of the ROS Package Development credits.
