@@ -39,7 +39,7 @@ Please upload all the mechanical drawings into the [drawings/mechanical](drawing
 > - Engineering drawings' [format](https://www.mcgill.ca/engineeringdesign/step-step-design-process/basics-graphics-communication/drawing-format-and-elements) is prefered.
 > - **Bonus** will be given to innovated mechanical designs in a scale of 0% to 5% of the project's total.
 
-### 2. (20%) Electrical Design.
+### 3. (20%) Electrical Design.
 Please upload all the electrical drawings into the [drawings/electrical](drawings/electrical) directory to illustrate the following.
 - Power distribution/management for all the electrical components.
   - Please specify input and/or output voltage of each component.
@@ -47,34 +47,26 @@ Please upload all the electrical drawings into the [drawings/electrical](drawing
 - Signal flows among Raspberry Pi 5, Pico, and the motor drivers.
   - Please specify hardware interfaces used for these signals.
   - Please specify direction of each signal.
+- Node graph of the relationship between your node(s) and the `teleop_twist_joy` and the `teleop_twist_keyboard`.
 
 > [!NOTE]
 > - The electric flows output to motors are considered as power consumptions, thus can be ignored in the signal wiring diagram.  
 > - **Bonus** will be given to innovated electrical designs in a scale of 0% to 5% of the project's total.
 
-### 3. (35%) ROS Package Organization.
-1. (5%) Subscribe to the **`/cmd_vel` topic** and retrieve the linear and angular velocity from the embedded **[`Twist`](https://docs.ros2.org/foxy/api/geometry_msgs/msg/Twist.html) message**.
-2. (15%) Transmit the subscribed linear and angular velocity to the Pico board as **target velocity** for the robot.
-3. (15%) receive **actual velocity** from the Pico board.
-   Fill a **[`Twist`](https://docs.ros2.org/foxy/api/geometry_msgs/msg/Twist.html) message**.
-   Publish the message to **`/homer/real_velocity` topic** at **50 Hz**.
-- You are responsible for setting up the communication between the Pico board and the Raspberry Pi 5.
-- To publish the `/cmd_vel` topic from an external device (keyboard/gamepad), consider using [`teleop_twist_joy`](https://index.ros.org/r/teleop_twist_joy/) or [`teleop_twist_keyboard`](https://index.ros.org/r/teleop_twist_keyboard/) package.
-  
-### 4. (30%) Coding
-1. (5%) Illustrate a Schematic of mechanical design with specific dimensions and locations of key components.
-2. (10%) Illustrate a Wiring diagram for the relationships among the batteries, motors, motor driver, Pico board, power management board and Raspberry Pi.
-   Please mark/denote the signal wires and power wires.
-3. (5%) Illustrate a graph of ROS Nodes with all participating/active nodes and topics.
-4. (15%) Estimate the robot's **pose**.
-   - Given the following conditions.
-      1. Using the same temporal and spatial setups as described in [Assignment 3](https://classroom.github.com/a/R9LNWs9-)
-      2. Let the robot initiated at the state: $$(X_0 = 0, Y_0 = 0, \theta_0 = 0, v_0 = 0.5, \omega_0 = \pi/3)$$
-      3. Keep the linear and angular velocity the same and let them last for 1.2 seconds.
-      4. Use the same frequency as the `/homer/real_velocity` topic use to estimate the robot's pose.
-   - Please estimate the robot's final pose with the key procedures/equations.
-     
-### 5. (5%) Demonstration. 
+### 4. (35%) ROS Package Development
+- Upload all the source code running on the Pico to [pico_scripts](pico_scripts) directory.
+- Develop ROS package executable(s) with at least one node to fulfill the following demands:
+  - **Subscribe** to the `/cmd_vel` **topic** and retrieve the correct linear and angular velocity from the embedded [`Twist`](https://docs.ros2.org/foxy/api/geometry_msgs/msg/Twist.html) **message**.
+  - **Transmit** the subscribed linear and angular velocity to the Pico board as the reference velocity for the robot.
+  - **Receive** measured velocity from the Pico board, then publish a message under the **`/<your_robot_name>/measured_velocity` topic** at **50 Hz** with a [`Twist`](https://docs.ros2.org/foxy/api/geometry_msgs/msg/Twist.html) **message**.
+- Edit `setup.py` (or `CMakeLists.txt` if your package is with type of `ament_cmake`) to introduce all your executables to ROS.
+
+> [!NOTE]
+> - To validate an executable, run command: `ros2 run <package_name> <executable_name>`. 
+> - Extra 5% of project total credits will be given to the teams achieved to **launch** everything in one command.
+> - 
+
+## Demonstration Rules
 Remotely control your robot to travel along the path as required in the [final project](https://classroom.github.com/a/6rpdyl8z) in Robotics 1.
 Using either the keyboard on a laptop or a gamepad to drive your robot.
 
