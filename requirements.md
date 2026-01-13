@@ -1,4 +1,4 @@
-# Project 1: First ROS Package
+# Project Instructions
 
 ## Background
 Recall the final project of Robotics I.
@@ -7,25 +7,36 @@ Have you ever imagined upgrading the rover with extended computers, sensors and 
 
 The [Robot Operating System (ROS)](https://docs.ros.org/en/jazzy/index.html) is here to help.
 With its inherent modularity, which effectively turns software development into a "building block" architecture similar to assembling Legos. 
-Rather than writing a single, monolithic script that becomes impossible to debug, ROS allows you to break your robot’s complex functions into independent, isolated "nodes" that communicate through a universal messaging system. 
+Rather than writing a single, monolithic script that is hard to maintain and debug, ROS allows you to break your robot’s complex functions into independent, isolated "nodes" that communicate through a universal messaging system. 
 
-In this project, your team will start building a mobile robot for Robotics 2.
+In this project, your team will start building the mobile base of the coffee delivery robot.
 You will practice managing the robot using a ROS package and several ROS compatible modules.
 
 
 ## Requirements
+- Upload your package to this repository.
+- Write documentation to inspire interested people.
+
+### 1. Portrait
+- Take a **clear** picture of your robot.
+- **Label** the key components of the robot in the picture.
+- **Display** the labeled portrait in [README](README.md).
+
+> [!IMPORTANT]
+> The portrait has to match the robot used for the demonstration.
+
+> [!TIP]
+> Find a good viewing angle.
+> BearCar has a good [example](https://ucaengineeringphysics.github.io/bearcar_docs/images/bearcar_annotate.png).
+
 ### 1. (10%) Mechanical Design.
-- (2%) Save the ROS executables (Python scripts) under `<ros workspace>/src/<this repo>/<package name>/<package name>/`
-- (2%) Save the MicroPython scripts for the Pico board under `<ros workspace>/src/<this repo>/<package name>/pico_scripts/`
-- (2%) Save the mechanical design files (schematic and STL), wiring diagram and node graphs under `<ros workspace>/src/<this repo>/<package name>/resources/`
-- (2%) Verify you can start the node (anywhere) with the command: `ros2 run <package name> <executable name>/`
-- (2%) Make sure author's information is correctly filled in `package.xml` and `setup.py`.
-- To host ROS packages, you may need to prepare the development environment including but not limiting to:
-   - [Flash **Ubuntu 24.04** on Raspberry Pi 5](https://ubuntu.com/tutorials/how-to-install-ubuntu-desktop-on-raspberry-pi-4#2-prepare-the-sd-card).
-   - Install [ROS 2 **Jazzy** Jalisco](https://docs.ros.org/en/jazzy/Installation/Ubuntu-Install-Debs.html) and [configure ROS environment](https://docs.ros.org/en/jazzy/Tutorials/Beginner-CLI-Tools/Configuring-ROS2-Environment.html).
-   - Create [ROS workspace](https://docs.ros.org/en/jazzy/Tutorials/Beginner-Client-Libraries/Creating-A-Workspace/Creating-A-Workspace.html).
-   - (Optional) Install [Visual Studio Code](https://code.visualstudio.com/download#) IDE **Arm64** version.
- 
+- Illustrate all 3D printed and customized parts' dimensions.
+- Iluustrate the driving wheel's dimensions.
+- Illustrate spatial layout of the base and wheels.
+
+> [!NOTE]
+> Using engineering drawings [format](https://www.mcgill.ca/engineeringdesign/step-step-design-process/basics-graphics-communication/drawing-format-and-elements) is recommended.
+
 ### 2. (20%) Electrical Design a "coffee-holding" layer for [HomeR](https://github.com/linzhanguca/homer.git).
 - (5%) Design a layer which is capable of being integrated to the current [HomeR](https://github.com/linzhanguca/homer.git) robot.
 - (10%) A cup holding component for a **12 oz** coffee cup must be considered in your design.
