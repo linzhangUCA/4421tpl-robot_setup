@@ -17,7 +17,7 @@ In this project, you and your teammate(s) are expected to achieve following goal
 
 
 ## Resources
-- Please refer to HomeR's [documentation](https://linzhanguca.github.io/projects/homer) if you need to be inspired.
+- Please refer to HomeR's [documentation](https://linzhanguca.github.io/homer_docs) if you need to be inspired.
 - Mechanical designs using FreeCAD and 3D printable parts of HomeR are hosted here: [https://github.com/linzhangUCA/homer_me](https://github.com/linzhangUCA/homer_me).
 - KiCAD designs of the electronics relay PCB are hosted here: [https://github.com/linzhangUCA/homer_ee](https://github.com/linzhangUCA/homer_ee).
 - MicroPython scripts for controlling the differential drive mobile base of the HomeR can be found here: [https://github.com/linzhangUCA/homer_pico](https://github.com/linzhangUCA/homer_pico).
