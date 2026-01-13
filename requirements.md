@@ -9,16 +9,12 @@ The [Robot Operating System (ROS)](https://docs.ros.org/en/jazzy/index.html) is 
 With its inherent modularity, which effectively turns software development into a "building block" architecture similar to assembling Legos. 
 Rather than writing a single, monolithic script that becomes impossible to debug, ROS allows you to break your robot’s complex functions into independent, isolated "nodes" that communicate through a universal messaging system. 
 
-In this project, your team will develop a ROS package to manage the robot for Robotics 2.
+In this project, your team will start building a mobile robot for Robotics 2.
+You will practice managing the robot using a ROS package and several ROS compatible modules.
 
-## Objectives
-- Practice mechinacal design, fabrication and assembly.
-- Manage a robotic project using ROS.
-- Try out developed ROS packages.
-- Develop a customized ROS package.  
 
 ## Requirements
-### 1. (10%) Create a ROS package and organize the robot related resources in this package.
+### 1. (10%) Mechanical Design.
 - (2%) Save the ROS executables (Python scripts) under `<ros workspace>/src/<this repo>/<package name>/<package name>/`
 - (2%) Save the MicroPython scripts for the Pico board under `<ros workspace>/src/<this repo>/<package name>/pico_scripts/`
 - (2%) Save the mechanical design files (schematic and STL), wiring diagram and node graphs under `<ros workspace>/src/<this repo>/<package name>/resources/`
@@ -30,7 +26,7 @@ In this project, your team will develop a ROS package to manage the robot for Ro
    - Create [ROS workspace](https://docs.ros.org/en/jazzy/Tutorials/Beginner-Client-Libraries/Creating-A-Workspace/Creating-A-Workspace.html).
    - (Optional) Install [Visual Studio Code](https://code.visualstudio.com/download#) IDE **Arm64** version.
  
-### 2. (20%) Design a "coffee-holding" layer for [HomeR](https://github.com/linzhanguca/homer.git).
+### 2. (20%) Electrical Design a "coffee-holding" layer for [HomeR](https://github.com/linzhanguca/homer.git).
 - (5%) Design a layer which is capable of being integrated to the current [HomeR](https://github.com/linzhanguca/homer.git) robot.
 - (10%) A cup holding component for a **12 oz** coffee cup must be considered in your design.
   Refer to the dimension graph below or measure a tall-size Starbucks cup.
@@ -38,7 +34,7 @@ In this project, your team will develop a ROS package to manage the robot for Ro
    ![cup_dimensions](https://www.thepapercupcompany.com/assets/images/double-wall-coffee-dimesions21.gif)
 - Anti-spill features and protection against electrical components may earn **extra points**.
   
-### 3. (35%) Develop ROS node(s).
+### 3. (35%) ROS Package Organization.
 1. (5%) Subscribe to the **`/cmd_vel` topic** and retrieve the linear and angular velocity from the embedded **[`Twist`](https://docs.ros2.org/foxy/api/geometry_msgs/msg/Twist.html) message**.
 2. (15%) Transmit the subscribed linear and angular velocity to the Pico board as **target velocity** for the robot.
 3. (15%) receive **actual velocity** from the Pico board.
@@ -47,7 +43,7 @@ In this project, your team will develop a ROS package to manage the robot for Ro
 - You are responsible for setting up the communication between the Pico board and the Raspberry Pi 5.
 - To publish the `/cmd_vel` topic from an external device (keyboard/gamepad), consider using [`teleop_twist_joy`](https://index.ros.org/r/teleop_twist_joy/) or [`teleop_twist_keyboard`](https://index.ros.org/r/teleop_twist_keyboard/) package.
   
-### 4. (30%) Document the project in the [Documentation](README.md#documentation) section.
+### 4. (30%) Coding
 1. (5%) Illustrate a Schematic of mechanical design with specific dimensions and locations of key components.
 2. (10%) Illustrate a Wiring diagram for the relationships among the batteries, motors, motor driver, Pico board, power management board and Raspberry Pi.
    Please mark/denote the signal wires and power wires.
@@ -60,22 +56,12 @@ In this project, your team will develop a ROS package to manage the robot for Ro
       4. Use the same frequency as the `/homer/real_velocity` topic use to estimate the robot's pose.
    - Please estimate the robot's final pose with the key procedures/equations.
      
-### 5. (5%) Demonstrate remote control and drive the robot along the designated path. 
+### 5. (5%) Demonstration. 
 Remotely control your robot to travel along the path as required in the [final project](https://classroom.github.com/a/6rpdyl8z) in Robotics 1.
 Using either the keyboard on a laptop or a gamepad to drive your robot.
 
 ### 6. AI Policies
 Please acknowledge AI's contributions according to the policies in the [syllabus](https://linzhanguca.github.io/_docs/robotics2-2025/syllabus.pdf).
 
-## Documentation
-
-### Mechanical Design
-![]()
-
-### Wiring Diagram
-![]()
-
-### Node Graph
-![]()
 
 ### An Example of Estimating Robot's State
