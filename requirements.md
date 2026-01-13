@@ -14,8 +14,8 @@ You will practice managing the robot using a ROS package and several ROS compati
 
 
 ## Requirements
-- Upload your package to this repository.
-- Write documentation to inspire interested people.
+- Upload your ROS package to this repository.
+- Complete documentation in [README](README.md) to inspire interested people.
 
 ### 1. Portrait
 - Take a **clear** picture of your robot.
@@ -30,23 +30,28 @@ You will practice managing the robot using a ROS package and several ROS compati
 > BearCar has a good [example](https://ucaengineeringphysics.github.io/bearcar_docs/images/bearcar_annotate.png).
 
 ### 2. (10%) Mechanical Design.
-- Illustrate all 3D printed and customized parts' dimensions.
-- Iluustrate the driving wheel's dimensions.
-- Illustrate spatial layout of the base and the wheels.
-- Upload all the drawings into the [engineering_drawings](engineering_drawing) directory.
+Please upload all the mechanical drawings into the [drawings/mechanical](drawings/mechanical) directory to illustrate the following.
+- All 3D printed and customized parts' dimensions.
+- The driving wheel's dimensions.
+- Layout (spatial relationship) of the base, Raspberry Pi 5, driving wheels and the caster wheel.
 
 > [!NOTE]
 > - Engineering drawings' [format](https://www.mcgill.ca/engineeringdesign/step-step-design-process/basics-graphics-communication/drawing-format-and-elements) is prefered.
 > - **Bonus** will be given to innovated mechanical designs in a scale of 0% to 5% of the project's total.
 
-### 2. (20%) Electrical Design a "coffee-holding" layer for [HomeR](https://github.com/linzhanguca/homer.git).
-- (5%) Design a layer which is capable of being integrated to the current [HomeR](https://github.com/linzhanguca/homer.git) robot.
-- (10%) A cup holding component for a **12 oz** coffee cup must be considered in your design.
-  Refer to the dimension graph below or measure a tall-size Starbucks cup.
-- (5%) Assemble the robot with new parts.  
-   ![cup_dimensions](https://www.thepapercupcompany.com/assets/images/double-wall-coffee-dimesions21.gif)
-- Anti-spill features and protection against electrical components may earn **extra points**.
-  
+### 2. (20%) Electrical Design.
+Please upload all the electrical drawings into the [drawings/electrical](drawings/electrical) directory to illustrate the following.
+- Power distribution/management for all the electrical components.
+  - Please specify input and/or output voltage of each component.
+  - Please specify the power connectors/wires' names.
+- Signal flows among Raspberry Pi 5, Pico, and the motor drivers.
+  - Please specify hardware interfaces used for these signals.
+  - Please specify direction of each signal.
+
+> [!NOTE]
+> - The electric flows output to motors are considered as power consumptions, thus can be ignored in the signal wiring diagram.  
+> - **Bonus** will be given to innovated electrical designs in a scale of 0% to 5% of the project's total.
+
 ### 3. (35%) ROS Package Organization.
 1. (5%) Subscribe to the **`/cmd_vel` topic** and retrieve the linear and angular velocity from the embedded **[`Twist`](https://docs.ros2.org/foxy/api/geometry_msgs/msg/Twist.html) message**.
 2. (15%) Transmit the subscribed linear and angular velocity to the Pico board as **target velocity** for the robot.
