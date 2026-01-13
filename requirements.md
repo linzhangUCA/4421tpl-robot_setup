@@ -29,13 +29,15 @@ You will practice managing the robot using a ROS package and several ROS compati
 > Find a good viewing angle.
 > BearCar has a good [example](https://ucaengineeringphysics.github.io/bearcar_docs/images/bearcar_annotate.png).
 
-### 1. (10%) Mechanical Design.
+### 2. (10%) Mechanical Design.
 - Illustrate all 3D printed and customized parts' dimensions.
 - Iluustrate the driving wheel's dimensions.
-- Illustrate spatial layout of the base and wheels.
+- Illustrate spatial layout of the base and the wheels.
+- Upload all the drawings into the [engineering_drawings](engineering_drawing) directory.
 
 > [!NOTE]
-> Using engineering drawings [format](https://www.mcgill.ca/engineeringdesign/step-step-design-process/basics-graphics-communication/drawing-format-and-elements) is recommended.
+> - Engineering drawings' [format](https://www.mcgill.ca/engineeringdesign/step-step-design-process/basics-graphics-communication/drawing-format-and-elements) is prefered.
+> - **Bonus** will be given to innovated mechanical designs in a scale of 0% to 5% of the project's total.
 
 ### 2. (20%) Electrical Design a "coffee-holding" layer for [HomeR](https://github.com/linzhanguca/homer.git).
 - (5%) Design a layer which is capable of being integrated to the current [HomeR](https://github.com/linzhanguca/homer.git) robot.
