@@ -85,6 +85,7 @@ Please acknowledge AI's contributions according to the policies in the syllabus.
 > - Demonstrations are scheduled on Thursday, 02/12/2026 from 10:50 AM to 1:30 PM at the robotics lab (LSCA 105).
 > - Teams with fewer attempts have higher priority in the cue.
 > - **Changes submitted after the demonstration day will not be graded**.
+> - To secure a good demonstration, make sure you and your teammate(s) practice it a couple times ahead.
 
 We will reuse the track from Robotics 1's [final project](https://classroom.github.com/a/96OtuQyX) to demonstrate the effectiveness of ROS management and validity of motor control by following steps.
 1. Start/Launch/Run all the ROS nodes for the remote control demonstration.
